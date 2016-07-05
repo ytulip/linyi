@@ -1,0 +1,97 @@
+<block name="content">
+    <style>
+        html,body{
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .flex-container {
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            height: 100%;
+            display: table;
+        }
+        .flexslider{
+            position: relative;
+            zoom: 1;
+            vertical-align: middle;
+            display: table-cell;
+            background-color: #000000;
+        }
+        .slides{
+        }
+
+        ul{
+            position: absolute;
+            top:0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+
+        li{
+            position: relative;
+            display: table !important;
+        }
+
+        .us-text{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            min-height: 75px;
+            background-color: #000000;
+            opacity: .9;
+        }
+
+        ol{
+            display: none;
+        }
+
+        h2{
+            font-size: 20px;
+        }
+
+        .us-text-index{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-color: #000000;
+            opacity: .9;
+        }
+
+        li{
+            height: 100%;
+        }
+
+        img{
+            display: table-cell !important;
+            max-height: 90%;
+            vertical-align: middle;
+        }
+
+
+        .flexslider{border: none !important;}
+        .img-container{
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+    </style>
+    <div class="flex-container">
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+
+                    <div class="img-container"><img src="{{\Service\CommKits::addUrlHost($item->imgUrl)}}"/></div>
+                    <div class="us-text">
+                        <p></p>
+                        <div class="us-text-index"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</block>
